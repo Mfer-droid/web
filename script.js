@@ -56,17 +56,30 @@ window.onload = () => {
 // ENVIAR DATOS A GOOGLE SHEETS
 // =============================
 function enviarDatos(accion, datos) {
-  fetch(APPS_SCRIPT_URL, {
-    method: "POST",
-    mode: "no-cors",
-    cache: "no-cache",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ accion: accion, ...datos })
-  })
-  .then(response => console.log(`Datos de ${accion} enviados a Google Sheets.`))
-  .catch(error => console.error(`Error al enviar los datos de ${accion} a Google Sheets:`, error));
+    if (accion === "registrarMovimiento") {
+        const datosAjustados = { ...datos };
+        // Si hay una fecha de entrada, la convierte a un formato local
+        if (datosAjustados.entrada) {
+            datosAjustados.entrada = new Date(datosAjustados.entrada).toLocaleString("es-SV", { timeZone: 'America/El_Salvador' });
+        }
+        // Si hay una fecha de salida, la convierte a un formato local
+        if (datosAjustados.salidaFinal) {
+            datosAjustados.salidaFinal = new Date(datosAjustados.salidaFinal).toLocaleString("es-SV", { timeZone: 'America/El_Salvador' });
+        }
+        // Envía los datos ya convertidos
+        fetch(APPS_SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors",
+            cache: "no-cache",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ accion: accion, ...datosAjustados })
+        })
+        // ... (resto del código)
+    } else {
+        // ... (resto del código)
+    }
 }
 
 
