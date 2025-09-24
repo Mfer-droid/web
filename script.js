@@ -58,12 +58,12 @@ let registros = JSON.parse(localStorage.getItem("registros")) || [];
 let tarifas = JSON.parse(localStorage.getItem("tarifas")) || {
     Carro: 5.00,
     Camioneta: 7.00,
-    Pickup: 10.00,
+    Pickup: 8.00,
     Moto: 3.00,
     Baños: 0.25,
-    Dia: 10.00,
-    Semana: 60.00,
-    Mes: 200.00,
+    Dia: 4.00,
+    Semana: 20.00,
+    Mes: 75.00,
     HoraDiurna: 0.75,
     HoraNocturna: 1.00
 };
