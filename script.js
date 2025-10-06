@@ -683,7 +683,7 @@ function imprimirTicketBanios(costo) {
         <p>Registrado por: ${usuarioActivo ? usuarioActivo.user : "Operador"}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>`;
     abrirVentanaImpresion(html);
@@ -837,7 +837,7 @@ function ticketTemplateSalidaTermica(placa, entrada, salida, tiempo, costo, entr
         <p style="font-size:16px;">Registrado por: ${usuario || "Operador"}</p>
         <p style="font-size:16px;">Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>
     `;
