@@ -656,7 +656,7 @@ function imprimirTicketLavado(placa, tipoVeh, costo) {
         <p>Registrado por: ${usuarioActivo ? usuarioActivo.user : "Operador"}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>`;
     abrirVentanaImpresion(html);
@@ -711,7 +711,7 @@ function imprimirTicketPaseDia(placa, costo) {
         <p>Registrado por: ${usuarioActivo ? usuarioActivo.user : "Operador"}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>`;
     abrirVentanaImpresion(html);
@@ -742,7 +742,7 @@ function imprimirTicketPaseSemana(placa, costo) {
         <p>Registrado por: ${usuarioActivo ? usuarioActivo.user : "Operador"}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>`;
     abrirVentanaImpresion(html);
@@ -773,7 +773,7 @@ function imprimirTicketPaseMes(placa, costo) {
         <p>Registrado por: ${usuarioActivo ? usuarioActivo.user : "Operador"}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>`;
     abrirVentanaImpresion(html);
@@ -801,7 +801,7 @@ function ticketTemplate(titulo, placa, fecha, lineaInfo, footer) {
         <p>${footer || ""}</p>
         <p>Fecha/Hora: ${new Date().toLocaleString()}</p>
         <hr>
-        <p class="disclaimer">El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket y se<br>cobrarán según la tarifa establecida.</p>
+        <p class="disclaimer">CONTRIBUCIÓN PARROQUIAL<br>El cálculo de tiempo de<br>estacionamiento se basa en los<br>datos impresos en este ticket<br>agradecemos su preferencia y contribución.</p>
       </div>
     </body></html>
     `;
